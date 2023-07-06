@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandan - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+   
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url(back2.jpg);
+            background-size: cover;
+            background-color: rgb(2, 46, 41);
+            color: white;
+        }
+
+        nav {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            box-shadow: 0px 0px 20px rgb(14, 168, 180);
+            /* background-color: rgb(3, 79, 78); */
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            padding: 0 15px;
+        }
+
+        nav ul li:hover {
+            /* background-color: rgb(2, 46, 41); */
+            border: 1.5px solid white;
+            border-radius: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .left {
+            font-size: 1.3rem;
+            text-shadow: -5px 5px 10px rgb(14, 168, 180);
+        }
+
+        .right {
+            align-items: center;
+        }
+
+        #firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .leftsection {}
+
+        .rightsection {}
+
+        .hi {
+            font-size: 2.2rem;
+        }
+
+        .name {
+            font-size: 2.5rem;
+        }
+
+        .web {
+            font-size: 1.6rem;
+        }
+
+        .namecolor {
+            color: rgb(27, 198, 196);
+        }
+
+        #element {
+            color: rgb(27, 198, 196);
+        }
+        .download{
+            margin-top: 30px;
+            
+        }
+        .downloadcvbtn {
+            float: left;
+            width: 170px;
+            align-items: center;
+           
+            border-radius: 20px;
+            padding: 5px 0px 5px 10px;
+            justify-content: center;
+            box-shadow: 0px 8px 20px rgb(1, 70, 68);
+            background-color: rgb(7, 158, 155);
+        }
+        .ancdownloadcvbtn{
+            text-decoration: none;
+            color: white;
+        }
+        .downloadcvbtn:hover{
+            border: 2px solid rgb(26, 26, 26);
+           
+        }
+        .contactmebtn{
+            float: right;
+            margin-left: 20px;
+            border-radius: 20px;
+            padding: 5px 10px 5px 10px;
+            justify-content: center;
+            box-shadow: 0px 8px 20px rgb(1, 70, 68);
+            background-color: rgb(7, 158, 155);
+        }
+        .anccontactmebtn{
+            text-decoration: none;
+            color: white;
+        }
+        .contactmebtn:hover{
+            border: 2px solid rgb(26, 26, 26);
+           
+        }
+
+        #secondsection{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+           
+        }
+        #education{
+            font-size: 30px;
+            color: aqua;
+            margin-bottom: 20px;
+            border-bottom: 1.5px solid white;
+        }
+        .skills{
+            font-size: 30px;
+            color: aqua;
+            margin-bottom: 20px;
+            border-bottom: 1.5px solid white;
+        }
+        .secondleft{
+            align-items: center;
+            
+        }
+        .secondright{
+           
+        }
+        .educationlist{
+          
+        }
+        .listdetails{
+            color: aqua;
+            font-size: 11px;
+        }
+        .projectshead{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1.5px solid white;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        .projects1{
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        .plist{
+            font-size: 13px;
+        }
+        
+
+        .mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #2b2a2a;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #0e0d0d;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot2 {
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot3 {
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.projects1{
+    margin-top: 20px;
+}
+.Janmattxt{
+    color: aqua;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+hr{
+    border: 1.2px solid rgb(11, 63, 62);
+}
+footer{
+    border-top: 1.5px solid rgb(10, 125, 125) ;
+    height: 200px;
+    background-color: rgb(2, 39, 34);
+}
+#socialsites{
+    margin-top: 20px;
+}
+.social{
+    display: flex;
+    align-items: center;
+   
+    justify-content:center ;
+   list-style: none;
+
+}
+.information{
+    display: flex;
+    font-size: 12px;
+   color: #717171;
+    align-items: center;
+    justify-content: space-around;
+}
+.dev{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        display: none;
+    }
+    nav{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #firstsection{
+        flex-direction: column;
+    }
+    .contactmebtn{
+        margin-top: 15px;
+        margin-bottom: 10px;
+        float: left;
+    }
+    #secondsection{
+        flex-direction: column;
+    }
+    .dev{
+        flex-direction: column;
+    }
+    .projects1{
+        flex-direction: column;
+    }
+    .information{
+        flex-direction: column;
+    }
+    
+}
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> Chandan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#firstsection">Home</a></li>
+                    <li><a href="#socialsites">About</a></li>
+                    <li><a href="#secondsection">Skills</a></li>
+                    <li><a href="#secondsection" >Education</a></li>
+                    <li><a href="#thirdsection">Projects</a></li>
+                    <li><a href="#thirdsection">Experience</a></li>
+                    <li><a href="#socialsites">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="firstsection">
+            <div class="leftsection">
+                <img src="chandan3.png" alt="Chandan's Image" height="400px">
+            </div>
+            <div class="rightsection">
+                <div class="hi">Hi, There</div>
+                <div class="name">I'm <span class="namecolor">Chandan</span></div>
+
+                <div class="web">I'm a <span id="element"></span></div>
+                <div class="download">
+                    <div class="downloadcvbtn"><a class="ancdownloadcvbtn" href="https://drive.google.com/file/d/1CHLeWgVS9StSivOkVdJshZTvYJhXPEmX/view?usp=sharing">Download Resume</a></div>
+                    <div class="contactmebtn"><a class="anccontactmebtn" href="#socialsites"> Contact me</a></div>
+                </div>
+            </div>
+
+        </section>
+<hr />
+        <section id="secondsection">
+            <div class="secondleft">
+                <div id="education">Education</div>
+                <div>
+                        <details class="iitp">
+                            <summary>Indian Institute of Technology, Patna</summary>
+                            <ul class="listdetails">
+                                <li>patna, india (Nov 2021-present)</li>
+                                <li>Bachelor of Technology - Electrical & Electronics Engineering;</li>
+                                <li><b style="color: rgb(7, 158, 155);">Courses :</b>Computer Science: Data Structures, Algorithms, Data Science
+                                    Mathematics:<br/> Linear Algebra, Real and Complex Analysis, Partial Differential Equations</li>
+                            </ul>
+                        </details>
+
+                        <details class="jcir"><summary>
+                            Jagatdal Chashme-i-Rahamat High School, kolkata</summary>
+                            <ul class="listdetails">
+                                <li>Kolkata, india (2018-2020)</li>
+                                <li>12th(WBCHSE); (92.7%)</li>
+                                <li>(Physics, Chemistry, Maths)</li>
+                            </ul>
+                        </details>
+
+                        <details class="kav"><summary>
+                            Kankinara Arya Vidyalaya, Kankinara</summary>
+                            <ul class="listdetails">
+                                <li>Kolkata, india (2018)</li>
+                                <li>(10th(WBBSE); (72.8%))</li>
+                            </ul>
+                        </details>
+                    
+                </div>
+            </div>
+            
+            <div class="secondright">
+                <div class="skills">Skills</div>
+                <div>
+                    <details class="languages"><summary>
+                        Languages</summary>
+                        <ul class="listdetails">
+                            <li>C++, C, Python,Java, XML, HTML, CSS, JavaScript</li>
+                        </ul>
+                    </details>
+                    <details class="sat"><summary>
+                        Software and Technologies</summary>
+                        <ul class="listdetails">
+                            <li> Android Development, Data Structure and Algorithm, Android Studio,<br/> 
+                                Adobe PhotoShop & Git </li>
+                        </ul>
+                    </details>
+                    <details class=" Frameworks"><summary>
+                        Frameworks</summary>
+                        <ul class="listdetails">
+                            <li>NodeJS</li>
+                        </ul>
+                    </details>
+                    <details class="tools"><summary>
+                        Tools</summary>
+                        <ul class="listdetails">
+                            <li>Git & Github</li>
+                        </ul>
+                    </details>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="secondsection2" >
+            <h1 style="display: flex; justify-content: center; border-bottom:1px solid #717171;">Developments</h1>
+            <div class="dev" style="margin-top: 20px;">
+            <div class="sleft2">
+                <h3 style="margin-bottom: 13px; color: aqua;">Web Development</h3>
+                HTML 90%<br/>
+                <div style="background-color: gray; border-radius: 8px; border: 1px solid rgb(11, 63, 62);">
+                    <div style="background-color: aqua; width: 90%; height: 10px; border-radius: 8px;"></div>
+                </div>
+
+                CSS 80%<br/>
+                <div style="background-color: gray; border-radius: 8px; border: 1px solid rgb(11, 63, 62);">
+                    <div style="background-color: aqua; width: 80%; height: 10px; border-radius: 8px;"></div>
+                </div>
+
+                JavaScript 80%<br/>
+                <div style="background-color: gray; border-radius: 8px; border: 1px solid rgb(11, 63, 62);">
+                    <div style="background-color: aqua; width: 80%; height: 10px; border-radius: 8px;"></div>
+                </div>
+
+                NodeJS 80%<br/>
+                <div style="background-color: gray; border-radius: 8px; border: 1px solid rgb(11, 63, 62);">
+                    <div style="background-color: aqua; width: 80%; height: 10px; border-radius: 8px;"></div>
+                </div>
+                ReactJS 00%<br/>
+                <div style="background-color: gray; border-radius: 8px; border: 1px solid rgb(11, 63, 62);">
+                    <div style="background-color: aqua; width: 0%; height: 10px; border-radius: 8px;"></div>
+                </div>
+
+                Angular 00%<br/>
+                <div style="background-color: gray; border-radius: 8px; border: 1px solid rgb(11, 63, 62);">
+                    <div style="background-color: aqua; width: 0%; height: 10px; border-radius: 8px;"></div>
+                </div>
+            </div>
+            <div class="sright2">
+                <h3 style="margin-bottom: 13px; color: aqua;">Android Development</h3>
+
+                XML 100%<br/>
+                <div style="background-color: gray; border-radius: 8px; border: 1px solid rgb(11, 63, 62);">
+                    <div style="background-color: aqua; width: 100%; height: 10px; border-radius: 8px;"></div>
+                </div>
+
+                Java 90%<br/>
+                <div style="background-color: gray; border-radius: 8px; border: 1px solid rgb(11, 63, 62);">
+                    <div style="background-color: aqua; width: 90%; height: 10px; border-radius: 8px;"></div>
+                </div>
+                FireBase 90%<br/>
+                <div style="background-color: gray; border-radius: 8px; border: 1px solid rgb(11, 63, 62);">
+                    <div style="background-color: aqua; width: 90%; height: 10px; border-radius: 8px;"></div>
+                </div>
+
+                API Call 90%<br/>
+                <div style="background-color: gray; border-radius: 8px; border: 1px solid rgb(11, 63, 62);">
+                    <div style="background-color: aqua; width: 90%; height: 10px; border-radius: 8px;"></div>
+                </div>
+            </div>
+           </div>
+        </section>
+        <section id="thirdsection">
+            <div class="projects">
+                <h1 class="projectshead">Projects</h1>
+                <h4 class="Janmattxt">JanMat App (Polling APP)</h4>
+                <div class="projects1">
+                   
+                    <div class="p1left">
+                        
+                        <ul class="plist">
+                            <li><b style="color: rgb(7, 158, 155);">Features :</b>  Login, Logout & Register using Phone No.<br/>
+                                 & OTP verification, User profile update, Create Poll<br/>
+                                  with withminimum two and maximum six options with <br/>
+                                  image and youtube video, Realtime Update of <br/>Poll percentage.</li>
+                            <li> Developed a fully functioning Polling Android Application based 
+                                <br/>on Firebase realtime authentication using java for Backend
+                                <br/>and XML for Frontend.</li>
+                            <li> Used Google FireBase Database for Storage and FireBase
+                                 <br/>Authentication for user Authentication using Phone No. and
+                                 <br/>  OTP Verification</li>
+                            <li> Gained Exposure to Technologies like <b style="color: rgb(7, 158, 155);">Java, XML, Google </b>
+                                <br/><b style="color: rgb(7, 158, 155);">FireBase Realtime Database, FireStore Database,</b>
+                                <br/><b style="color: rgb(7, 158, 155);">Storage, Authentication, GitHub</b> and concept like <b>Recycler View,</b>
+                                <br/><b style="color: rgb(7, 158, 155);"> View Pager, Navigation Drawer, Botton Navigation, progress bar.</b>
+                                </li>     
+                        </ul>
+
+                    </div>
+                    <div class="p1right">
+                        <div class="slideshow-container">
+
+                            <div class="mySlides fade">
+                              <div class="numbertext">1 / 7</div>
+                              <img  height="380px" src="6.jpg" style="width:100%">
+                              <div class="text">Login page</div>
+                            </div>
+                            
+                            <div class="mySlides fade">
+                              <div class="numbertext">2 / 7</div>
+                              <img height="380px" src="7.jpg" style="width:100%">
+                              <div class="text">Register</div>
+                            </div>
+                            
+                            <div class="mySlides fade">
+                              <div class="numbertext">3 / 7</div>
+                              <img height="380px" src="3.jpg" style="width:100%">
+                              <div class="text">Poll form</div>
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">4 / 7</div>
+                                <img height="380px" src="4.jpg" style="width:100%">
+                                <div class="text">Poll with Youtube video</div>
+                              </div>
+                              <div class="mySlides fade">
+                                <div class="numbertext">5 / 7</div>
+                                <img height="380px" src="5.jpg" style="width:100%">
+                                <div class="text">Simple poll </div>
+                              </div>
+                              <div class="mySlides fade">
+                                <div class="numbertext">6 / 7</div>
+                                <img height="380px" src="1.jpg" style="width:100%">
+                                <div class="text">navigation Drawer </div>
+                              </div>
+                              <div class="mySlides fade">
+                                <div class="numbertext">7 / 7</div>
+                                <img height="380px" src="2.jpg" style="width:100%">
+                                <div class="text">Poll with photo </div>
+                              </div>
+
+
+
+
+                            </div>
+                            <br>
+                            
+                            <div style="text-align:center">
+                              <span class="dot"></span> 
+                              <span class="dot"></span> 
+                              <span class="dot"></span> 
+                              <span class="dot"></span> 
+                              <span class="dot"></span> 
+                              <span class="dot"></span> 
+                              <span class="dot"></span> 
+                            </div>
+                         
+                    </div>
+                
+                </div>
+                <div class="projectheadingtxt">
+                    <h3 class="Janmattxt">Sudoku Solver Android App</h3>
+                </div>
+                <div class="projects1">
+                    <div class="p1left">
+                        <div class="slideshow-container">
+                            <div class="mySlides2 fade">
+                              <div class="numbertext">1 / 2</div>
+                              <img  height="380px" src="sudoku1.jpg" style="width:100%">
+                              <div class="text"></div>
+                            </div>
+                            
+                            <div class="mySlides2 fade">
+                              <div class="numbertext">2 / 2</div>
+                              <img height="380px" src="sudoku2.jpg" style="width:100%">
+                              <div class="text"></div>
+                            </div>
+                        </div>
+                            <br>
+                            
+                            <div style="text-align:center">
+                              <span class="dot2"></span> 
+                              <span class="dot2"></span> 
+                            </div>
+                        
+
+                    </div>
+                    <div class="p1right">
+
+                        <ul class="plist">
+                            <li><b style="color: rgb(7, 158, 155);">Features :</b>it can solve world's toughest sudoku in milli second</li>
+                            <li> Developed a fully functioning sudoku solver Android Application based 
+                                <br/>on Data Structur and Algorithms
+                                </li>
+                            <li> Used <b style="color: rgb(7, 158, 155);">Recursion </b> and <b style="color: rgb(7, 158, 155);">backtracking</b> Algorithms to solve sudoku.</li>
+                            <li> Gained Exposure to Technologies like <b style="color: rgb(7, 158, 155);">Java, XML, </b> </li>     
+                        </ul>
+    
+                    </div>
+                </div>
+
+
+                <div class="projectheadingtxt">
+                    <h3 class="Janmattxt">IIT Patna College Android App</h3>
+                </div>
+                <div class="projects1">
+                    <div class="p1left">
+
+                        <ul class="plist">
+                            <li><b style="color: rgb(7, 158, 155);">Features :</b> Login, Logout& Register using Email & password, 
+                                <br/>User profile update, Notice Board, Auto Image slider
+                                <br/>with 5 images in Home Screen <b style="color: rgb(7, 158, 155);">Admin control</b> : like 
+                                <br/>notice Upload with image and pdf, Add, update and delete
+                                <br/>studednts details with students photo, add and update courses</li>
+                            <li> Developed a fully functioning College Android Application based 
+                                <br/>on Firebase realtime authentication using java for Backend
+                                <br/>and XML for Frontend.</li>
+                            <li> Used Google FireBase Database for Storage and FireBase
+                                 <br/>Authentication for user Authentication using Email and
+                                 <br/>  Password</li>
+                            <li> Gained Exposure to Technologies like <b style="color: rgb(7, 158, 155);">Java, XML, Google </b>
+                                <br/><b style="color: rgb(7, 158, 155);">FireBase Realtime Database, FireStore Database,</b>
+                                <br/><b style="color: rgb(7, 158, 155);">Storage, Authentication, GitHub</b> and concept like <b>Recycler View,</b>
+                                <br/><b style="color: rgb(7, 158, 155);"> View Pager, Navigation Drawer, Botton Navigation, progress bar.</b>
+                                </li>     
+                        </ul>
+                    </div>
+                    <div class="p1right">
+                        <div class="slideshow-container">
+                            <div class="mySlides3 fade">
+                              <div class="numbertext">1 / 10</div>
+                              <img  height="380px" src="iit1.jpg" style="width:100%">
+                              <div class="text"></div>
+                            </div>
+                            
+                            <div class="mySlides3 fade">
+                              <div class="numbertext">2 / 10</div>
+                              <img height="380px" src="iit2.jpg" style="width:100%">
+                              <div class="text"></div>
+                            </div>
+                            <div class="mySlides3 fade">
+                                <div class="numbertext">3 / 10</div>
+                                <img height="380px" src="iit3.jpg" style="width:100%">
+                                <div class="text"></div>
+                            </div>
+                            <div class="mySlides3 fade">
+                                <div class="numbertext">4 / 10</div>
+                                <img height="380px" src="iit4.jpg" style="width:100%">
+                                <div class="text"></div>
+                            </div>
+                            <div class="mySlides3 fade">
+                                <div class="numbertext">5 / 10</div>
+                                <img height="380px" src="iit5.jpg" style="width:100%">
+                                <div class="text"></div>
+                            </div>
+                            <div class="mySlides3 fade">
+                                <div class="numbertext">6 / 10</div>
+                                <img height="380px" src="iit6.jpg" style="width:100%">
+                                <div class="text"></div>
+                            </div>
+                            <div class="mySlides3 fade">
+                                <div class="numbertext">7 / 10</div>
+                                <img height="380px" src="iit7.jpg" style="width:100%">
+                                <div class="text"></div>
+                            </div>
+                            <div class="mySlides3 fade">
+                                <div class="numbertext">8 / 10</div>
+                                <img height="380px" src="iit8.jpg" style="width:100%">
+                                <div class="text"></div>
+                            </div>
+                            <div class="mySlides3 fade">
+                                <div class="numbertext">9 / 10</div>
+                                <img height="380px" src="iit9.jpg" style="width:100%">
+                                <div class="text"></div>
+                            </div>
+                            <div class="mySlides3 fade">
+                                <div class="numbertext">10 / 10</div>
+                                <img height="380px" src="iit10.jpg" style="width:100%">
+                                <div class="text"></div>
+                            </div>
+
+
+                        </div>
+                            <br>
+                            
+                            <div style="text-align:center">
+                              <span class="dot3"></span> 
+                              <span class="dot3"></span> 
+                              <span class="dot3"></span> 
+                              <span class="dot3"></span> 
+                              <span class="dot3"></span> 
+                              <span class="dot3"></span> 
+                              <span class="dot3"></span> 
+                              <span class="dot3"></span> 
+                              <span class="dot3"></span> 
+                              <span class="dot3"></span> 
+                            </div>
+    
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="socialsites">
+            <ul class="social">
+                <li style="margin-right: 20px;"><img src="fbpng.png" height="25px"></li>
+                <li style="margin-right: 20px;"><img src="instapng.png" height="25px"></li>
+                <li style="margin-right: 20px;"><img src="twitterpng.png" height="25px"></li>
+                <li style="margin-right: 20px;"><img src="emailpng.png" height="25px"></li>
+                <li style="margin-right: 20px;"><img src="linkedin2.webp" height="35px"></li>
+                <li style="margin-right: 20px;"><img src="github.png" height="30px"></li>
+            </ul>
+        </div>
+
+        <div class="information">
+            <div class="ileft">
+                <b style="font-size: 14px;">Contact </b><br/>
+                Chandan Kumar Mahato <br/>
+                Indian Institute of Technology, Patna<br/>
+                Email :Chandan_2101ee22@iitp.ac.in<br/>
+                Ph No.: 6289284774 <br/>
+                Kolkata, WestBengal
+            </div>
+            <div class="iright">
+                <b style="font-size: 14px;">Social Media</b><br/>
+                Linkedin : mrchandanm<br/>
+               Github : mrchandanm<br/>
+                Code Forces : mrchandanm<br/>
+                Instagram : mr_chandan_m<br/>
+                Youtube : chandanIITP<br/>
+                Twitter : Chandan90721772
+               
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Frontend Developer.','Backend Developer.','Android Developer.','Web Developer.'],
+            typeSpeed: 80,
+        });
+
+        let slideIndex = 0;
+        let slideIndex2 = 0;
+        let slideIndex3 = 0;
+showSlides();
+showSlides2();
+showSlides3();
+
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+function showSlides2() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides2");
+  let dots = document.getElementsByClassName("dot2");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex2++;
+  if (slideIndex2 > slides.length) {slideIndex2 = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex2-1].style.display = "block";  
+  dots[slideIndex2-1].className += " active";
+  setTimeout(showSlides2, 2000); // Change image every 2 seconds
+}
+
+function showSlides3() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides3");
+  let dots = document.getElementsByClassName("dot3");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex3++;
+  if (slideIndex3 > slides.length) {slideIndex3 = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex3-1].style.display = "block";  
+  dots[slideIndex3-1].className += " active";
+  setTimeout(showSlides3, 2000); // Change image every 2 seconds
+}
+
+
+    </script>
+</body>
+
+</html>
